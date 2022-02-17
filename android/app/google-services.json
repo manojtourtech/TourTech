@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "236056880604",
+    "project_id": "marpe-bdd9d",
+    "storage_bucket": "marpe-bdd9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236056880604:android:2c569f4b4f226e36bbdb19",
+        "android_client_info": {
+          "package_name": "com.marpe.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236056880604-mbc749epe3qmspnmmtjih14e8ct0sqgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNFugF-p_Xr72NXRV-0I2LEb_ojxDJGn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236056880604-mbc749epe3qmspnmmtjih14e8ct0sqgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236056880604:android:83511e085734e687bbdb19",
+        "android_client_info": {
+          "package_name": "com.marpe.therapist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236056880604-mbc749epe3qmspnmmtjih14e8ct0sqgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNFugF-p_Xr72NXRV-0I2LEb_ojxDJGn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236056880604-mbc749epe3qmspnmmtjih14e8ct0sqgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
