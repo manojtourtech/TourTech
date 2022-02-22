@@ -11,6 +11,8 @@ import user from './userReducer';
 import session from './sessionReducer';
 import loader from './loaderReducer';
 import messages from './messagesReducer';
+import selectedMessageItem from './selectedAudioItem';
+import selectedUserForChat from './selectedUserForChat';
 
 export default () => {
   const rootReducer = combineReducers({
@@ -19,6 +21,8 @@ export default () => {
     session,
     loader,
     messages,
+    selectedMessageItem,
+    selectedUserForChat,
   });
 
   const middleware = [];

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import {SHOW_LOADER, HIDE_LOADER} from '../actions/actionTypes';
 import config from '../../config';
-import {updateMessageDeliveryStatus} from '../../database/realmdb';
+import {updateMessageDeliveryStatus} from '../../database/local_patient_db';
 
 /*****  FOR START NEW CHAT ******/
 
@@ -33,10 +33,10 @@ export function* sendMessage(action) {
         Body: body,
       })
       .then(res => res);
-    console.log('Response => ', response);
+    console.log('Response ===============>=> ', response);
     if (response.status === 200) {
       yield put({type: HIDE_LOADER});
-      updateMessageDeliveryStatus(messageId);
+      updateMessageDeliveryStatus(messageId, 3);
     }
   } catch (error) {
     // update your UI to handle other errors

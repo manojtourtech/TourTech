@@ -1,13 +1,15 @@
 import {all, fork, takeEvery} from 'redux-saga/effects';
 
-import {registerNumber, registerUser} from './SessionSaga';
+import {loginUser} from './SessionSaga';
 import {getProfileDetail} from './GetProfileDetailSaga';
 import {sendMessage} from './SendMessageSaga';
+import {sendAttachment} from './SendAttachmentSaga';
 
 import {
-  REGISTER_NUMBER,
+  LOGIN_USER,
   GET_PROFILE_DETAIL,
   SEND_MESSAGE,
+  SEND_ATTACHMENT,
 } from '../actions/actionTypes';
 
 /* ------------- Connect Types To Sagas ------------- */
@@ -15,8 +17,9 @@ import {
 export default function* root() {
   //yield all([fork(REGISTER_NUMBER, registerActionWatcher)]);
   yield all([
-    takeEvery(REGISTER_NUMBER, registerNumber),
+    takeEvery(LOGIN_USER, loginUser),
     takeEvery(GET_PROFILE_DETAIL, getProfileDetail),
     takeEvery(SEND_MESSAGE, sendMessage),
+    takeEvery(SEND_ATTACHMENT, sendAttachment),
   ]);
 }

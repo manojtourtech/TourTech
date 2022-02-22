@@ -7,14 +7,25 @@ export const hideLoader = () => ({
 
 /************ For Session  ************/
 
-export const registerNumber = body => ({
-  type: ActionTypes.REGISTER_NUMBER,
+export const loginUser = body => ({
+  type: ActionTypes.LOGIN_USER,
+  body,
+});
+
+export const loginUserDetails = body => ({
+  type: ActionTypes.LOGIN_USER_DETAILS,
   body,
 });
 
 export const otpVerify = status => ({
   type: ActionTypes.OTP_VERIFY,
   status,
+});
+
+/*  Logout */
+
+export const logout = () => ({
+  type: ActionTypes.LOG_OUT,
 });
 
 /*  User */
@@ -45,5 +56,17 @@ export const sendAttachment = data => ({
 /* Save Message */
 export const saveMessage = data => ({
   type: ActionTypes.SAVE_MESSAGE,
+  data,
+});
+
+// audio
+
+export const setAudioItem = payload => ({
+  type: ActionTypes.SET_AUDIO_ITEM,
+  payload,
+});
+
+export const selectUserForChat = data => ({
+  type: ActionTypes.SELECT_USER_FOR_CHAT,
   data,
 });

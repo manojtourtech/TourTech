@@ -1,4 +1,7 @@
 const colors = {
+  textColor: '#08374D',
+  textColor2: '#034B6C',
+  borderColor: '#CDCDCD',
   primary: '#46B4D7',
   seconday: '#FFDDCC',
   background: '#2552E1',

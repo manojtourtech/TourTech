@@ -12,15 +12,19 @@ import {
   StyleSheet,
 } from 'react-native';
 import {Card, Avatar} from 'react-native-paper';
-import {colors} from '../assets/colors/colors';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import IconFontisto from 'react-native-vector-icons/Fontisto';
 import {ms, s, vs} from 'react-native-size-matters';
+
+import colors from '../theme/colors';
+
 const {width} = Dimensions.get('screen');
+
 function reverseText(s) {
   // console.log(s.split("").reverse().join(""))
   return s.split('').reverse().join('');
 }
+
 const images = {
   image1:
     'https://images.unsplash.com/photo-1485199692108-c3b5069de6a0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
@@ -168,7 +172,7 @@ export default class ContactsModal extends React.Component {
                   <IconFontisto
                     name="search"
                     size={s(22)}
-                    color={colors.PrimaryColor}
+                    color={colors.primary}
                   />
                 </View>
                 <View style={{flex: 0.86, justifyContent: 'center'}}>
@@ -217,7 +221,7 @@ export default class ContactsModal extends React.Component {
                                 this.state.itemIndex == item.id &&
                                 this.state.select
                                   ? '#F41032'
-                                  : colors.PrimaryColor,
+                                  : colors.primary,
                               justifyContent: 'center',
                               alignItems: 'center',
                             }}>
@@ -228,7 +232,7 @@ export default class ContactsModal extends React.Component {
                                   this.state.itemIndex == item.id &&
                                   this.state.select
                                     ? '#F41032'
-                                    : colors.PrimaryColor,
+                                    : colors.primary,
                               }}>
                               {reverseText('ףיסוהל‏')}
                             </Text>
@@ -269,11 +273,11 @@ export default class ContactsModal extends React.Component {
                   flexDirection: 'row',
                   alignSelf: 'center',
                   marginTop: vs(25),
-                  backgroundColor: colors.PrimaryColor,
+                  backgroundColor: colors.primary,
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                <Text style={{fontSize: ms(18), color: colors.BackgroundColor}}>
+                <Text style={{fontSize: ms(18), color: colors.white}}>
                   {reverseText('הרימש')}
                 </Text>
               </TouchableOpacity>
@@ -295,7 +299,7 @@ const styles = StyleSheet.create({
     height: '90%',
     marginTop: 100,
     width: width * 1,
-    backgroundColor: colors.BackgroundColor,
+    backgroundColor: colors.white,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
@@ -303,13 +307,13 @@ const styles = StyleSheet.create({
     height: vs(50),
     width: '100%',
     flexDirection: 'row',
-    backgroundColor: colors.BackgroundColor,
+    backgroundColor: colors.white,
     elevation: 4,
   },
   Text1: {
     fontSize: ms(17),
     fontWeight: 'bold',
-    color: colors.PrimaryColor,
+    color: colors.primary,
   },
   textInput: {
     height: 60,

@@ -19,8 +19,7 @@ export function* sendAttachment(action) {
       typeId,
       fileType,
     } = action.data;
-    console.log('Type Id =======================', typeId);
-    console.log('Subject =======================', subject);
+    console.log('Data =======================', action.data);
 
     let filename = photoData.split('/').pop();
 
@@ -42,7 +41,7 @@ export function* sendAttachment(action) {
     data.append('fileTypes', fileType);
     data.append('previewFiles', previewFile);
 
-    fetch('http://147.234.84.34:3000/api/v1/message/sending_message', {
+    fetch('http://147.234.84.37:3000/api/v1/message/sending_message', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
