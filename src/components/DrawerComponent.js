@@ -249,15 +249,15 @@ const DrawerContent = props => {
               textAlign: 'left',
               color: '#F41032',
             }}
-            onPress={() => {
-              deleteAllChats();
-              logoutCalled();
-              props.logout();
-              props.navigation.dispatch(DrawerActions.closeDrawer());
-              // props.navigation.replace('LogIn');
+            // onPress={() => {
+            //   deleteAllChats();
+            //   logoutCalled();
+            //   props.logout();
+            //   props.navigation.dispatch(DrawerActions.closeDrawer());
+            //   // props.navigation.replace('LogIn');
 
-              props.navigation.dispatch(StackActions.replace('AuthNavigation'));
-            }}
+            //   props.navigation.dispatch(StackActions.replace('AuthNavigation'));
+            // }}
           />
         </Drawer.Section>
       </View>
