@@ -1,0 +1,220 @@
+import {Dimensions} from 'react-native';
+import colors from '../../../../../../theme/colors';
+import {ScaledSheet, vs} from 'react-native-size-matters';
+const {width} = Dimensions.get('screen');
+
+export default styles = ScaledSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f9fafc',
+    // justifyContent:'center',
+    // alignItems:'center'
+  },
+  inner: {
+    flex: 0.87,
+    backgroundColor: '#f9fafc',
+    // backgroundColor: 'red',
+  },
+  topView: {
+    height: '50@vs',
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: colors.BackgroundColor,
+    elevation: 4,
+  },
+  topView2: {
+    height: '50@vs',
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: colors.BackgroundColor,
+    elevation: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  Img: {
+    flex: 0.2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  Input: {
+    flex: 0.46,
+    paddingBottom: 7,
+  },
+  bottom: {
+    flex: 0.25,
+  },
+  Text1: {
+    fontSize: '17@ms',
+    fontWeight: 'bold',
+    color: colors.textColor2,
+    direction: 'rtl',
+  },
+  Text2: {
+    fontSize: '19@ms',
+    fontWeight: 'bold',
+    color: '#F41032',
+  },
+  Text3: {
+    fontSize: '17@ms',
+    color: colors.BackgroundColor,
+  },
+  Text4: {
+    fontSize: '19@ms',
+    fontWeight: 'bold',
+    marginTop: '15@vs',
+    color: colors.PrimaryColor,
+  },
+  Text5: {
+    fontSize: '15@ms',
+    marginTop: '5@vs',
+    color: '#68777B',
+  },
+  Text6: {
+    fontSize: '16@ms',
+    marginTop: '8@vs',
+    color: colors.textColor,
+    writingDirection: 'rtl',
+  },
+  Text7: {
+    fontSize: '16@ms',
+    marginTop: '6@vs',
+    color: '#68777B',
+  },
+  Text8: {
+    fontSize: '17@ms',
+    marginTop: '6@vs',
+    color: colors.PrimaryColor,
+  },
+
+  Text9: {
+    fontSize: '14@ms',
+    marginTop: '6@vs',
+    alignSelf: 'flex-end',
+    color: '#68777B',
+  },
+  text10: {
+    fontSize: '13@ms',
+    marginTop: '4@vs',
+    color: colors.textColor,
+  },
+  text11: {
+    fontSize: '19@ms',
+    fontWeight: 'bold',
+    color: colors.PrimaryColor,
+  },
+  Text12: {
+    fontSize: '17@ms',
+    color: colors.PrimaryColor,
+    marginTop: '8@vs',
+  },
+  Text13: {
+    fontSize: '15@ms',
+    color: colors.textColor,
+    alignSelf: 'flex-end',
+    marginRight: '14@s',
+  },
+  Text14: {
+    fontSize: '18@ms',
+    color: colors.BackgroundColor,
+  },
+  Text15: {
+    fontSize: '18@ms',
+    fontWeight: 'bold',
+    color: colors.PrimaryColor,
+    textAlign: 'left',
+  },
+  button3: {
+    height: 45,
+    width: '100%',
+    borderRadius: 10,
+    marginTop: '25@vs',
+    alignSelf: 'center',
+    elevation: 2,
+    flexDirection: 'row-reverse',
+    backgroundColor: colors.BackgroundColor,
+    borderWidth: 0.7,
+    borderColor: colors.borderColor,
+  },
+  addButton: {
+    height: '45@vs',
+    width: '100%',
+    flexDirection: 'row-reverse',
+    borderRadius: 10,
+    marginTop: '30@vs',
+    alignSelf: 'center',
+    elevation: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '5@vs',
+    backgroundColor: '#F99E4B',
+  },
+  card1: {
+    height: '160@vs',
+    elevation: 2,
+    marginBottom: 4,
+    borderRadius: 10,
+    alignSelf: 'center',
+    width: '100%',
+    backgroundColor: '#FFF1E3',
+    marginBottom: 20,
+  },
+  card2: {
+    height: '60@vs',
+    elevation: 2,
+    marginBottom: 4,
+    borderRadius: 10,
+    alignSelf: 'center',
+    width: '90%',
+    backgroundColor: '#FFF1E3',
+  },
+
+  Avatar: {
+    marginTop: '9@vs',
+  },
+  textInput: {
+    height: 60,
+    width: '94%',
+    borderWidth: 1,
+    borderColor: colors.borderColor,
+    borderRadius: 10,
+    alignSelf: 'center',
+    marginTop: '7@vs',
+    fontSize: '17@ms',
+    color: '#46B4D7',
+    paddingRight: '12@s',
+  },
+  date: {
+    height: 58,
+    width: '100%',
+    borderRadius: 10,
+    borderWidth: 0.7,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    borderColor: colors.borderColor,
+    flexDirection: 'row-reverse',
+    alignItems: 'center',
+    paddingHorizontal: '15@s',
+    marginTop: '20@vs',
+    backgroundColor: colors.BackgroundColor,
+  },
+  viewWrapper: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: '"rgba(0, 0, 0, 0.5)"',
+  },
+  modalView: {
+    height: '40%',
+    width: width * 1,
+    backgroundColor: colors.BackgroundColor,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+
+  modalView2: {
+    height: '90%',
+    width: width * 1,
+    backgroundColor: colors.BackgroundColor,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+});
